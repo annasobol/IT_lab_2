@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .layer1 {
+         float: left; /* Обтекание по правому краю */
+         background: rgb(140, 213, 241); 
+         border: 1px solid black; 
+         padding: 30px; 
+         margin-right: 20px; 
+         width: 40%; 
+        }
+       </style>
+</head>
+<body>
+    <h1>Лабараторная работа 2</h1>
+
+    <h2>Заполните форму для университета</h2>
+    
+    <div class="layer1">
+        Данный текст использован с позиционированием float: left и стилями, подключенными в теге head <br>
+        Чтобы заполнить форму, нужно корректно ввести данные
+       </div>
+    <form action="#" class="form">
+        <div class="form__field">
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        </div>
+        <div class="form__field">
+        <input type="email" name="name" placeholder="E-Mail" />
+        <span class="form__error">Это поле должно содержать E-Mail в формате mypost@gmail.com</span>
+        </div>
+        <div class="form__field">
+        <input type="tel" name="name" placeholder="Ваш номер телефона в формате 2xxx-xxx" pattern="2[0-9]{3}-[0-9]{3}"/>
+        <span class="form__error">Это поле должно содержать телефон в формате 2xxx-xxx</span>
+        </div>
+        <div class="form__field">
+        <input type="url" name="name" placeholder="Ссылка на лабораторную работу" />
+        <span class="form__error">Это поле должно содержать URL в формате http://mylab.com</span>
+        </div>
+        
+        <button type="submit">Отправить</button>
+        </form>
+        
+        <div id="flexscentr">
+       
+        <div id="centrblock">Блок по центру</div>
+       </div> 
+
+
+
+</body>
+</html>
